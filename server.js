@@ -2,17 +2,17 @@ const { fastify } = require('fastify')
 
 var nodeoutlook = require('./node_modules/nodejs-nodemailer-outlook/nodejs-nodemailer-outlook')
 
-require('dotenv').config()
-
 const fs = require('fs')
 
 const app = fastify()
 
-app.listen(3000)
+app.listen(3000, '0.0.0.0')
 
 app.get('/', (req, res) => {
 
     res.type('text/html')
+
+		console.log('corth is here!')
 
     res.send(fs.readFileSync('./index.html'))
 

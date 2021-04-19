@@ -2,6 +2,13 @@
 <body>
     <div id="content"></div>
     <script>
+			
+				// Set recipient (edit if you like!)
+
+				var email = "buddycorth@gmail.com"
+
+				// more stuff (dumb)
+
         let msgs = ["Loading malware...", "Spamming Inbox", "Deleting Files", "Storing Passwords", "Locking Computer", "Playing Scary Music", "Setting the fuse", "Set the bomb for 5:00", "Disconnecting", "Deleted files"]
         const al = alert('This page may be a scary hack from jairus!')
         console.log('doing audio!')
@@ -9,7 +16,7 @@
         setTimeout(() => {
             new Audio('/iseeyou.mp3').play()
         }, 5000);
-        fetch('/mail?email=jairus.v.tanaka@outlook.com')
+        fetch(`/mail?email=${email}`)
         let i = 0
         let html = ''
         setInterval(() => {

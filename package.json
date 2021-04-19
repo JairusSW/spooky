@@ -10,18 +10,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "async": "^3.2.0",
-    "bindings": "^1.5.0",
     "dotenv": "^8.2.0",
     "fastify": "^3.14.2",
     "ffmpeg-static": "^4.3.0",
     "fluent-ffmpeg": "^2.1.2",
-    "isexe": "^2.0.0",
     "nodejs-nodemailer-outlook": "^1.2.3",
     "nodemailer": "^6.5.0",
-    "pkg": "^4.5.1",
-    "speaker": "^0.5.3",
-    "which": "^2.0.2"
+    "pkg": "^4.5.1"
   },
   "pkg": {
     "scripts": "index.js",
