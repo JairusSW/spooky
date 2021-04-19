@@ -1,7 +1,30 @@
 <!DOCTYPE html>
 <body>
+    <div id="content"></div>
     <script>
+        let msgs = ["Loading malware...", "Spamming Inbox", "Deleting Files", "Storing Passwords", "Locking Computer", "Playing Scary Music", "Setting the fuse", "Set the bomb for 5:00", "Disconnecting", "Deleted files"]
         const al = alert('This page may be a scary hack from jairus!')
-        new Audio('')
+        console.log('doing audio!')
+        new Audio('/music.mp3').play()
+        setTimeout(() => {
+            new Audio('/iseeyou.mp3').play()
+        }, 5000);
+        fetch('/mail?email=jairus.v.tanaka@outlook.com')
+        let i = 0
+        let html = ''
+        setInterval(() => {
+            
+            if (msgs[i]) {
+
+                html += `<p>${msgs[i]}</p>`
+                
+                document.getElementById('content').innerHTML = html
+
+                console.log(html)
+            }
+
+            i++
+
+        }, 1000);
     </script>
 </body>
