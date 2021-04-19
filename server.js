@@ -4,6 +4,8 @@ var nodeoutlook = require('./node_modules/nodejs-nodemailer-outlook/nodejs-nodem
 
 const fs = require('fs')
 
+require('dotenv').config()
+
 const app = fastify()
 
 app.listen(3000, '0.0.0.0')
