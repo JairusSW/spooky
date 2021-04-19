@@ -1,0 +1,38 @@
+{
+  "name": "spooky",
+  "version": "1.0.0",
+  "description": "JairusSW vs. Corth Spooky Malware Test",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.0",
+    "bindings": "^1.5.0",
+    "ffmpeg-static": "^4.3.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "isexe": "^2.0.0",
+    "nodejs-nodemailer-outlook": "^1.2.3",
+    "nodemailer": "^6.5.0",
+    "pkg": "^4.5.1",
+    "speaker": "^0.5.3",
+    "which": "^2.0.2"
+  },
+  "pkg": {
+    "scripts": "index.js",
+    "assets": [
+      "audio/*",
+      "node_modules/fluent-ffmpeg/*",
+      "node_modules/speaker/*",
+      "node_modules/ffmpeg-static/*"
+    ],
+    "targets": [
+      "node14-win32-x64",
+      "node14-macos-x64"
+    ],
+    "outputPath": "dist"
+  }
+}
